@@ -190,6 +190,20 @@ SENSOR_DESCRIPTIONS: list[OverkizSensorDescription] = [
         state_class=SensorStateClass.MEASUREMENT,
     ),
     OverkizSensorDescription(
+        key=OverkizState.IO_POWER_HEAT_PUMP_STATE,
+        name="Electric power consumption (Heat Pump)",
+        device_class=SensorDeviceClass.POWER,
+        native_unit_of_measurement=UnitOfPower.WATT,
+        state_class=SensorStateClass.MEASUREMENT,
+    ),
+    OverkizSensorDescription(
+        key=OverkizState.IO_POWER_HEAT_ELECTRICAL,
+        name="Electric power consumption",
+        device_class=SensorDeviceClass.POWER,
+        native_unit_of_measurement=UnitOfPower.WATT,
+        state_class=SensorStateClass.MEASUREMENT,
+    ),
+    OverkizSensorDescription(
         key=OverkizState.CORE_CONSUMPTION_TARIFF1,
         name="Consumption tariff 1",
         device_class=SensorDeviceClass.ENERGY,
